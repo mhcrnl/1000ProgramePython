@@ -1,3 +1,15 @@
+# Learn_Python
+
+```python3
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+# FILE: 005_hello_world.py
+# RUN : python3 005_hello_world.py
+# --------------------------------------------------------------Begin file
+print("Hello, World!")
+# ---------------------------------------------------------------End file
+```
+
 ## Synopsis
 
 At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
