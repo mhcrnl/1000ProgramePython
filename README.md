@@ -10,6 +10,9 @@ print("Hello, World!")
 # ---------------------------------------------------------------End file
 ```
 
+## Resurse Web
+[https://github.com/dabeaz-course/practical-python](https://github.com/dabeaz-course/practical-python)
+
 ## Synopsis
 
 At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
