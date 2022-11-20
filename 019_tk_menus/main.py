@@ -27,6 +27,7 @@ helpmenu.add_command(label="Help...", command=MyFunction)
 menubar.add_cascade(label="Help", menu=helpmenu)
 
 root.config(menu=menubar)
+root.iconbitmap(r"/newicon.ico")
 root.mainloop()
 # ---------------------------------------------------------------End file
 

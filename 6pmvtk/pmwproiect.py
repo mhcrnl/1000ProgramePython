@@ -1,12 +1,12 @@
 
 
-import Tkinter
+import tkinter
 import Pmw
 
 def callback(tag):
     # This is called whenever the user clicks on a
     # button in the RadioSelect widget.
-    print tag, 'was pressed.'
+    print (tag, 'was pressed.')
 
 # Initialise Tkinter and Pmw.
 root = Pmw.initialise(fontScheme = 'pmw1')
