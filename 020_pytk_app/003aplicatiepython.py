@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
-import Tkinter as tk
-import Tkinter
+import tkinter as tk
+#import tkinter
+
 class Aplication(tk.Frame):
     def __init__(self, master=None):
-        tk.Frame.__init__(self, master)
+        super().__init__(self, master)
         self.grid()
         self.createWidgets()
 

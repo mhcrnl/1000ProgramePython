@@ -1,9 +1,9 @@
-from Tkinter import *
+from tkinter import *
 
 class Aplicatie(Frame):
 
     def salut(self):
-        print "Te salut din python"
+        print ("Te salut din python.")
 
     def createWidgets(self):
         self.Quit = Button(self)
