@@ -33,7 +33,8 @@ class Todo(tk.Tk):
         self.text_frame.pack(side=tk.BOTTOM, fill=tk.X)
         self.task_create.focus_set()
 
-        todo1 = tk.Label(self.tasks_frame, text="--- Add Items Here ---", bg="lightgrey", fg="black", pady=10)
+        todo1 = tk.Label(self.tasks_frame, text="--- Add Items Here ---",
+                         bg="lightgrey", fg="black", pady=10)
         todo1.bind("<Button-1>", self.remove_task)
 
         self.tasks.append(todo1)
@@ -48,7 +49,19 @@ class Todo(tk.Tk):
         self.bind_all("<Button-5>", self.mouse_scroll)
         self.tasks_canvas.bind("<Configure>", self.task_width)
 
-        self.colour_schemes = [{"bg": "lightgrey", "fg": "black"}, {"bg": "grey", "fg": "white"}]
+        self.colour_schemes = [{"bg": "lightgrey", "fg": "black"},
+                               {"bg": "grey", "fg": "white"}]
+         #---------------------------------------------------------Add Menu
+        menu = tk.Menu(self)
+        self.config(menu=menu)
+
+        fileMenu = tk.Menu(menu)
+        fileMenu.add_command(label="Exit", command=self.f_exit)
+        menu.add_cascade(label="File", menu=fileMenu)
+
+    def f_exit(self):
+        exit()
+        #----------------------------------------------------------END Menu
 
     def add_task(self, event=None):
         task_text = self.task_create.get(1.0,tk.END).strip()
