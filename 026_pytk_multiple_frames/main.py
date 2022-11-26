@@ -32,7 +32,15 @@ class Example(Frame):
 
         entry2 = Entry(frame2)
         entry2.pack(fill=X, padx=5, expand=True)
-        
+        # ---------------------------------------------------Frame3
+        frame3 = Frame(self)
+        frame3.pack(fill=BOTH, expand=1)
+
+        lbl3 = Label(frame3, text="Review", width=6)
+        lbl3.pack(side=LEFT, anchor=N, padx=5,pady=5)
+
+        txt = Text(frame3)
+        txt.pack(fill=BOTH, pady=5, padx=5, expand=True)
 
 def main():
     root = Tk()
